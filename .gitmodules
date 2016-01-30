@@ -1,0 +1,3 @@
+[submodule "cores"]
+	path = cores
+	url = https://github.com/ultraembedded/cores
