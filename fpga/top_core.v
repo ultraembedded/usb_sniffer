@@ -71,6 +71,14 @@ u_ulpi
     .ulpi_dir_i(ulpi_dir_i),
     .ulpi_nxt_i(ulpi_nxt_i),
     .ulpi_stp_o(ulpi_stp_o),
+
+    // Wishbone Interface (not used)
+    .reg_addr_i(8'b0),
+    .reg_stb_i(1'b0),
+    .reg_we_i(1'b0),
+    .reg_data_i(8'b0),
+    .reg_data_o(),
+    .reg_ack_o(), 
     
     // UTMI Interface
     .utmi_txvalid_i(utmi_txvalid),
