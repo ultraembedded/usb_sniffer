@@ -66,31 +66,23 @@ u_ulpi
     .ulpi_rst_i(rst_i),
 
     // ULPI Interface
-    .ulpi_data_i(ulpi_data_i),
-    .ulpi_data_o(ulpi_data_o),
+    .ulpi_data_out_i(ulpi_data_i),
+    .ulpi_data_in_o(ulpi_data_o),
     .ulpi_dir_i(ulpi_dir_i),
     .ulpi_nxt_i(ulpi_nxt_i),
     .ulpi_stp_o(ulpi_stp_o),
 
-    // Wishbone Interface (not used)
-    .reg_addr_i(8'b0),
-    .reg_stb_i(1'b0),
-    .reg_we_i(1'b0),
-    .reg_data_i(8'b0),
-    .reg_data_o(),
-    .reg_ack_o(), 
-    
     // UTMI Interface
     .utmi_txvalid_i(utmi_txvalid),
     .utmi_txready_o(utmi_txready),
     .utmi_rxvalid_o(utmi_rxvalid),
     .utmi_rxactive_o(utmi_rxactive),
     .utmi_rxerror_o(utmi_rxerror),
-    .utmi_data_o(utmi_data_r),
-    .utmi_data_i(utmi_data_w),
+    .utmi_data_in_o(utmi_data_r),
+    .utmi_data_out_i(utmi_data_w),
     .utmi_xcvrselect_i(xcvrselect_w),
     .utmi_termselect_i(termselect_w),
-    .utmi_opmode_i(op_mode_w),
+    .utmi_op_mode_i(op_mode_w),
     .utmi_dppulldown_i(dppulldown_w),
     .utmi_dmpulldown_i(dmpulldown_w),
     .utmi_linestate_o(utmi_linestate)
