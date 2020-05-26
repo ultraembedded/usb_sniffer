@@ -1,4 +1,7 @@
 ## USB Sniffer
+
+**Archived: Replaced by [https://github.com/ultraembedded/usb2sniffer](https://github.com/ultraembedded/usb2sniffer)**
+
 High Speed USB 2.0 capture device based on miniSpartan6+
 
 Homepage: [http://ultra-embedded.com/usb_sniffer](http://ultra-embedded.com/usb_sniffer)  
