@@ -52,7 +52,7 @@ wire                    dmpulldown_w;
 
 wire [7:0]              utmi_data_w = 8'b0;
 wire [7:0]              utmi_data_r;
-wire                    utmi_txvalid = 1'b1;
+wire                    utmi_txvalid = 1'b0;
 wire                    utmi_txready;
 wire                    utmi_rxvalid;
 wire                    utmi_rxactive;
